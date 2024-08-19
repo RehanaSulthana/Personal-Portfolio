@@ -7,12 +7,253 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+body {
+    font-family: 'Robot', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: url(https://wallpaperset.com/w/full/7/5/a/545589.jpg) no-repeat;
+    background-size: cover;
+}
+.nav-links{
+    list-style: none;
+    padding:0;
+    margin: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: rgb(7, 114, 144);
+    color: #fff;
+    padding: 20px 10px;   
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 2.0rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 9px 0;
+    text-align: right; 
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    color: rgb(224, 114, 114);
+    text-decoration: underline;
+} 
+
+#about {
+    background: #f7f7f7;
+    color:black;
+    padding: 30px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.bio {
+    padding: 20px;
+    text-align: left;
+    justify-content:center;
+}
+
+.personal-info {
+    list-style: none;
+    padding: 0;
+}
+
+.personal-info li {
+    margin: 0 ;
+}
+
+#skills {
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.skills-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+}
+
+
+.progress-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 10px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+}
+
+
+.progress-circle:before {
+    content: attr(data-progress) '%';
+    position: absolute;
+    font-size: 1.0rem;
+    font-weight: bold;
+    color: #444;
+}
+
+#projects {
+    padding: 50px 0;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: #eee;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+.project h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    align-items:center ;
+}
+
+.project a:hover {
+    background: #88D66C;
+}
+
+#education {
+    background: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 550px;
+    height: 350px;
+    margin: 20px auto;
+}
+
+.education-timeline {
+    list-style: none;
+    padding: 10px;
+    text-align: left;
+}
+
+#contact {
+    padding: 50px 0;
+} 
+
+form {
+    background: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #444;
+    color: #fff;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #88D66C;
+}
+
+ .social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a:hover {
+    color: blue;
+} 
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+} 
+
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>Rehana Sulthana</h1>
+        <h1>Shaik Rehana Sulthana</h1>
         <div class="header-content">
                 <nav>
                 <ul class="nav-links">
